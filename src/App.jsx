@@ -3,15 +3,17 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./layout/header";
 import Banner from "./Banner";
 
-import Swiperrrr from "./Swiperrrr";
+import Movies from "./Movies";
 
 function App() {
   return (
     <Router>
       <Header />
-      <Banner />
-      <Swiperrrr />
-      <Routes></Routes>
+
+      <Routes>
+        <Route path="/" element={<Banner />} />
+        <Route path="/movies" element={<Movies />} />
+      </Routes>
     </Router>
   );
 }
