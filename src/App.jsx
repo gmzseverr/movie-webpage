@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./layout/header";
+
 import Banner from "./Banner";
 
 import Movies from "./Movies";
+import Header from "./Header";
 
 function App() {
   return (
